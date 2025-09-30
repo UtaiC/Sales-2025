@@ -17,6 +17,14 @@ from dateutil import parser
 from pandas.tseries.offsets import BDay
 from dateutil import parser
 import plotly.graph_objs as go
+######################################################
+import re
+############################
+if st.button("🔄 Clear Cache"):
+    st.cache_data.clear()
+    st.cache_resource.clear()
+    st.success("✅ Cache cleared! Please wait a moment for fresh data.")
+    st.rerun()
 ################# BG #################################
 def try_parse_date(x):
     try:
@@ -488,4 +496,5 @@ if BU=='One-SIM':
     formatted_display('Target and Actual Balance:',round(SIM_BL,2),'B')
     st.write("---")
 ############################## Mold Prospected
+
 
