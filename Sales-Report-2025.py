@@ -141,6 +141,7 @@ TotalMASS = filtered[
     Invoices['ลูกค้า'].str.contains('โฮมเอ็ก') |
     Invoices['ลูกค้า'].str.contains('ศิริโกมล') |
     Invoices['ลูกค้า'].str.contains('โคชิน') |
+    Invoices['ลูกค้า'].str.contains('ไทย จีเอ็มบี อินดัสตรี่') |
     Invoices['ลูกค้า'].str.contains('คาวันญ่า') |
     Invoices['รหัสสินค้า'].str.contains('SB')|
     Invoices['รหัสสินค้า'].str.contains('DENSE')) &
@@ -496,5 +497,6 @@ if BU=='One-SIM':
     formatted_display('Target and Actual Balance:',round(SIM_BL,2),'B')
     st.write("---")
 ############################## Mold Prospected
+
 
 
