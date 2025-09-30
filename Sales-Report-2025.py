@@ -155,6 +155,7 @@ MASSDNCN = filtered[
     Invoices['ลูกค้า'].str.contains('โฮมเอ็ก') |
     Invoices['ลูกค้า'].str.contains('ศิริ') |
     Invoices['ลูกค้า'].str.contains('โคชิน') |
+    Invoices['ลูกค้า'].str.contains('ไทย จีเอ็มบี อินดัสตรี่') |
     Invoices['ลูกค้า'].str.contains('ชนะชัย') |
     Invoices['รหัสสินค้า'].str.contains('SB')|
     Invoices['เลขที่'].astype(str).str.contains('DR') |
@@ -487,3 +488,4 @@ if BU=='One-SIM':
     formatted_display('Target and Actual Balance:',round(SIM_BL,2),'B')
     st.write("---")
 ############################## Mold Prospected
+
