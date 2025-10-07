@@ -149,6 +149,7 @@ TotalMASS = filtered[
      ~Invoices['รหัสสินค้า'].astype(str).str.contains('MOLD') &
     ~Invoices['รหัสสินค้า'].astype(str).str.contains('SIM-P') &
      ~Invoices['รหัสสินค้า'].astype(str).str.contains('21330-01') &
+      ~Invoices['รายการสินค้า'].astype(str).str.contains('Mold') &
     ~Invoices['เลขที่'].astype(str).str.contains('DR') &
     ~Invoices['เลขที่'].astype(str).str.contains('SR') &
     ~Invoices['เลขที่'].astype(str).str.contains('HS') &
@@ -498,6 +499,7 @@ if BU=='One-SIM':
     formatted_display('Target and Actual Balance:',round(SIM_BL,2),'B')
     st.write("---")
 ############################## Mold Prospected
+
 
 
 
